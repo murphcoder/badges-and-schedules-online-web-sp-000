@@ -6,3 +6,5 @@ def batch_badge_creator(name_array)
   name_array.collect {|name| badge_maker(name)}
 end
 
+def assign_rooms(speakers)
+  speakers.each_with_index 
