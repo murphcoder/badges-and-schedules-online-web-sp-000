@@ -11,12 +11,10 @@ def assign_rooms(speakers)
 end
 
 def printer(names)
-  badges = batch_badge_creator(names)
-  rooms = assign_rooms(names)
   count = 0
   names.count.times do
-    puts badges[count]
-    puts rooms[count]
+    puts batch_badge_creator(names)[count]
+    puts assign_rooms(names)[count]
     count += 1
   end
 end
