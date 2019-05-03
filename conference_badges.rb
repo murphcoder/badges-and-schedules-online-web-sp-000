@@ -10,3 +10,7 @@ def assign_rooms(speakers)
   speakers.collect.with_index {|name, room| "Hello, #{name}! You'll be assigned to room #{room + 1}!"}
 end
 
+def printer(names)
+  puts batch_badge_creator(names)
+  puts assign_rooms(names)
+end
